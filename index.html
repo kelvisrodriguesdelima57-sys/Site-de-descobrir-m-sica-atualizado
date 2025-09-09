@@ -33,7 +33,7 @@
     transform: translate(-50%, -50%);
     background: #ff0000;
     color: #fff;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: bold;
     padding: 30px 50px;
     border-radius: 15px;
@@ -41,6 +41,7 @@
     box-shadow: 0 5px 20px rgba(0,0,0,0.7);
     z-index: 1000;
     animation: blink 1s linear infinite;
+    line-height: 1.5;
   }
 
   @keyframes blink {
@@ -48,12 +49,9 @@
     25%, 75% { opacity: 0.5; }
   }
 
-  header, footer {
-    display: none; /* Oculta header e footer para focar no aviso */
-  }
-
-  main {
-    display: none; /* Oculta conteúdo principal */
+  /* Oculta conteúdo da interface */
+  header, footer, main {
+    display: none;
   }
 </style>
 </head>
@@ -62,8 +60,11 @@
 <!-- Fundo hacker -->
 <img class="bg-gif" src="https://media3.giphy.com/media/v1.Y2lkPTZjMDliOTUyZmF5d3U2NTV6ZW1sZmJqZG05a2g4ZG84MGIxdmlxbmsxdnl6YTNlbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/V4NSR1NG2p0KeJJyr5/giphy.gif" alt="Fundo Hacker">
 
-<!-- Aviso de manutenção grande -->
-<div class="update-notice">⚠️ SITE EM MANUTENÇÃO ⚠️</div>
+<!-- Aviso de manutenção -->
+<div class="update-notice">
+  ⚠️ SITE EM MANUTENÇÃO ⚠️<br>
+  Volta ao ar em breve!
+</div>
 
 </body>
 </html>
