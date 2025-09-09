@@ -1,73 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interface com Fundo Hacker</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      height: 100vh;
-      overflow: hidden;
-      background: #000;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interface com Aviso</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    background: #000;
+  }
 
-    /* Fundo com o GIF hacker */
-    .bg-gif {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: -1;
-      opacity: 0.8;
-    }
+  /* Fundo GIF hacker */
+  .bg-gif {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.8;
+  }
 
-    header {
-      background: rgba(0, 0, 0, 0.7);
-      color: #0f0;
-      padding: 15px;
-      text-align: center;
-      font-family: 'Courier New', monospace;
-    }
+  header {
+    background: rgba(0,0,0,0.7);
+    color: #0f0;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Courier New', monospace;
+  }
 
-    main {
-      padding: 20px;
-      text-align: center;
-      color: #0f0;
-      font-family: 'Courier New', monospace;
-    }
+  main {
+    padding: 20px;
+    text-align: center;
+    color: #0f0;
+    font-family: 'Courier New', monospace;
+  }
 
-    footer {
-      background: rgba(0, 0, 0, 0.7);
-      color: #0f0;
-      padding: 10px;
-      text-align: center;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      font-family: 'Courier New', monospace;
-    }
-  </style>
+  footer {
+    background: rgba(0,0,0,0.7);
+    color: #0f0;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Courier New', monospace;
+  }
+
+  /* Aviso de atualização no topo */
+  .update-notice {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffcc00;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+    font-weight: bold;
+    z-index: 1000;
+  }
+</style>
 </head>
 <body>
 
-  <!-- GIF de fundo hacker -->
-  <img class="bg-gif" src="https://media3.giphy.com/media/v1.Y2lkPTZjMDliOTUyZmF5d3U2NTV6ZW1sZmJqZG05a2g4ZG84MGIxdmlxbmsxdnl6YTNlbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/V4NSR1NG2p0KeJJyr5/giphy.gif" alt="Fundo Hacker">
+<img class="bg-gif" src="https://media3.giphy.com/media/v1.Y2lkPTZjMDliOTUyZmF5d3U2NTV6ZW1sZmJqZG05a2g4ZG84MGIxdmlxbmsxdnl6YTNlbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/V4NSR1NG2p0KeJJyr5/giphy.gif" alt="Fundo Hacker">
 
-  <header>
-    <h1>Interface Hacker</h1>
-  </header>
+<div class="update-notice">
+  🚧 Site em atualização! Volte em breve. 🚧
+</div>
 
-  <main>
-    <p>Bem-vindo à interface com estilo hacker!</p>
-  </main>
+<header>
+  <h1>Interface Hacker</h1>
+</header>
 
-  <footer>
-    <p>© 2025 Hacker Interface</p>
-  </footer>
+<main>
+  <p>Bem-vindo à interface com estilo hacker!</p>
+</main>
+
+<footer>
+  <p>© 2025 Hacker Interface</p>
+</footer>
 
 </body>
 </html>
