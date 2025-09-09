@@ -1,63 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Site em Atualização</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f0f0f0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interface com Bart</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #e0e0e0;
+    height: 100vh;
+  }
 
-    .update-notice {
-      background: #ffcc00;
-      color: #333;
-      padding: 30px 40px;
-      border-radius: 15px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-      text-align: center;
-      max-width: 500px;
-      position: relative;
-      overflow: hidden;
-    }
+  header {
+    background: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+  }
 
-    .update-notice h1 {
-      margin: 0 0 10px;
-      font-size: 26px;
-    }
+  main {
+    padding: 20px;
+    text-align: center;
+  }
 
-    .update-notice p {
-      margin: 10px 0 20px 0;
-      font-size: 16px;
-    }
+  /* GIF do Bart flutuando na interface */
+  .bart-interface {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 120px;
+    z-index: 1000;
+    animation: bounce 3s ease-in-out infinite;
+  }
 
-    /* GIF do Bart dançando */
-    .bart {
-      width: 120px;
-      position: absolute;
-      bottom: 10px;
-      left: -140px; /* Começa fora da tela */
-      animation: dance 5s linear infinite;
-    }
-
-    @keyframes dance {
-      0% { left: -140px; }
-      50% { left: calc(100% - 120px); }
-      100% { left: -140px; }
-    }
-  </style>
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+  }
+</style>
 </head>
 <body>
-  <div class="update-notice">
-    <h1>🚧 Site em Atualização 🚧</h1>
-    <p>Estamos trabalhando para melhorar sua experiência. Volte em breve!</p>
-    <img class="bart" src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyaGN4dHpndHljenczanludWw5dDhuMjMyenRvc2wyMzRyZ2tuaXR4ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4oMoIbIQrvCjm/giphy.gif" alt="Bart Simpson dançando">
-  </div>
+
+<header>
+  <h1>Minha Interface</h1>
+</header>
+
+<main>
+  <p>Bem-vindo ao site! Aqui está a interface principal.</p>
+</main>
+
+<!-- GIF do Bart na interface -->
+<img class="bart-interface" src="https://media3.giphy.com/media/v1.Y2lkPTZjMDliOTUyNndscWtxYTAzOXdyZ3JnY25heWg3MWM3ZGVjM3ZzdzIxOXFpYnRtOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/V4NSR1NG2p0KeJJyr5/giphy.gif" alt="Bart Simpson dançando">
+
 </body>
 </html>
